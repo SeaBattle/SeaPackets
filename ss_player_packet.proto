@@ -1,0 +1,7 @@
+message player_packet {
+    required int32 level = 1;
+    required int32 ban_type = 2;
+    required int64 ban_end = 3;
+    required string name = 4;
+    required string icon = 5;
+}

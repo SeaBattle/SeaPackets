@@ -2,3 +2,11 @@ message auth_packet {
     required string uid = 1;
     optional string password = 2;
 }
+
+message register_packet {
+    required string login = 1;
+    required string password = 2;
+    optional string name = 3;
+    optional string icon_url = 4;
+    optional string motto = 5;
+}
