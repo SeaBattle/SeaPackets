@@ -7,8 +7,8 @@ message Header {
     enum PacketType {
         guest_auth = 1;
         login_auth = 2;
-        player = 3;
-        error = 4;
-        register = 5;
+        player_packet = 3;
+        error_packet = 4;
+        register_packet = 5;
     }
 }
