@@ -6,7 +6,8 @@ message auth_packet {
 message register_packet {
     required string login = 1;
     required string password = 2;
-    optional string name = 3;
-    optional string icon_url = 4;
-    optional string motto = 5;
+    required string uid = 3;
+    optional string name = 4;
+    optional string icon_url = 5;
+    optional string motto = 6;
 }
