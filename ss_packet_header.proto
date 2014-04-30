@@ -1,6 +1,14 @@
 message Header {
-    required int32 type = 1;
+    required PacketType type = 1;
     required int32 protocol = 2;
     required int32 apiVersion = 3;
     required bytes packet = 4;
+
+    enum PacketType {
+        guest_auth = 1;
+        login_auth = 2;
+        players = 3;
+        error = 4;
+        register = 5;
+    }
 }
